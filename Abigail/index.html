@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Abigail's Portfolio" />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+    <meta name="author" content="Abigail Liu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script type="module" src="portfolio.js"></script>
+    <style>
+      table {
+        border: 1px solid black;
+      }
+    </style>
+    <title>Abigail's Portfolio</title>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <nav>
+          <div class="navBox0">
+            <i class="material-icons" id="menuIcon">view_headline</i>
+          </div>
+
+          <div class="navBox1">
+            <a class="navLink" href="#about">About</a>
+            <a class="navLink" href="#experiences">Experiences</a>
+            <a class="navLink" href="#projects">Projects</a>
+            <a class="navLink" href="#contact">Contact</a>
+            <a class="navLink" href="methodtest.html">Part I</a>
+            <a class="navLink" href="login.html">Part III</a>
+          </div>
+
+          <div class="navBox2">
+            <form id="searchForm">
+              <input type="text" id="searchInput" name="search" />
+              <i class="material-icons" id="searchIcon">search</i>
+            </form>
+          </div>
+        </nav>
+        <div id="vertNav">
+          <a class="navLink2" href="#about">About</a><br />
+          <a class="navLink2" href="#experiences">Experiences</a><br />
+          <a class="navLink2" href="#projects">Projects</a><br />
+          <a class="navLink2" href="#contact">Contact</a><br />
+          <a class="navLink2" href="methodtest.html">Part I</a>
+          <a class="navLink2" href="login.html">Part III</a>
+        </div>
+      </header>
+
+      <div id="container">
+        <div id="landing">
+          <section id="introSec">
+            <div id="introBox1">
+              <figure>
+                <picture>
+                  <source srcset="assets/me.jpg" />
+                  <img id="introPic" src="assets/me.jpg" alt="Abigail" />
+                </picture>
+              </figure>
+            </div>
+
+            <div id="introBox2">
+              <code id="helloWorld">System.out.println("Hello World!");</code>
+
+              <h1 class="introHeader">Welcome to my website :3</h1>
+              <h1 class="introHeader">I am Abigail Liu.</h1>
+
+              <aside>
+                <p id="scrollTxt">
+                  Scroll down to learn more about my background, experience and
+                  projects.
+                </p>
+              </aside>
+              <i class="material-icons" id="downArrow">keyboard_arrow_down</i>
+            </div>
+          </section>
+        </div>
+
+        <div id="blog">
+          <h2 style="text-align: center; color: palevioletred">Blogs</h2>
+          <article>
+            <ul id="postUl"></ul>
+          </article>
+        </div>
+
+        <div id="about">
+          <h2>About</h2>
+          <span class="aboutTxt"
+            >I am an undergraduate Computer Science major at
+            <a href="https://www.ucsd.edu">UC San Diego</a> with Mathematics
+            minor. I plan to graduate in June 2022 and pursue a career as a full
+            time Staff Engineer.</span
+          >
+          <p class="aboutTxt">
+            ISFJ - Defender personality who is loaded with empathy, easy to work
+            with and passionate on Web and Mobile Development, Artificial
+            Intelligence and real world problem solving. In my free time, I love
+            working out, watching anime, exploring new food and water sports.
+          </p>
+
+          <br />
+          <p style="color: white">
+            Ghibli movies are the best. Let's enjoy the opening song from
+            <em>Spirited Away</em>
+            before moving forward.
+          </p>
+          <audio controls>
+            <source
+              src="assets/joe_hisaishi_one_summer_s_day_-2051758089614646503.mp3"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio tag.
+          </audio>
+        </div>
+
+        <div id="experiences">
+          <h2>Experiences</h2>
+          <ul>
+            <li>Internship</li>
+            <pre>
+Staff Engineer Intern at Palo Alto Networks    (Jun 2021 – Sept 2021)
+  • Worked on Prisma Access QA Team for central one-stop portal QA/Automation real-time status lookup
+  • Designed table, dropdown React components for customizable test run results based on 10+ attributes
+  • Integrated full-stack with Express.js and optimized query to speed up data fetching from multi-endpoints
+  • Prefetched data from TestRail to intermediate SQL that shortened automation coverage wait time by 90%
+  • Gathered information from branching/performance matrix, Jira and improved visibility of regression
+            </pre>
+            <li>Student Organizarion</li>
+            <pre>
+Front-end Web Developer, Human Resource Chair at UC San Diego Chinese Computer Community     (Apr 2019 – Jan 2021)
+  • Used HTML/CSS and GitHub to update the “Timeline” and “Members” page for the CCC website
+  • Collaborated with 5 developers, UIUX designer and product manager to create user friendly interface
+  • Plan and coordinate over 10 events, including Demo Day, teamwork, and professionalism workshops
+  • Address organizational issue in quarterly meetings and maintain over 120 members’ records in G Suite
+  • Evaluate the performance of over 100 project managers and developers on a weekly and quarterly basis
+          </pre
+            >
+            <li>Working on Campus</li>
+            <pre>
+Tutor at UC San Diego CSE Department     (Mar 2020 – Jun 2021)
+  • Experience with tutoring Java, C and ARM Assembly intro-level courses with hundreds of enrollments
+  • Provided debugging and conceptual support during weekly tutor hours for around 120 hours
+  • Hosted virtual small group problem-solving sessions for after class practices, Q&A and community building
+  • Graded and provided feedback on 20 students’ programming assignments per week
+
+
+Academic Integrity Proctor at UC San Diego Academic Integrity Office      (Oct 2019 – Mar 2020) 
+  • Proctor over 5 exams per quarter for over 1000 students and maintain the integrity of exam materials
+  • Communicate and report potential integrity violating behaviors to the university and instructors
+
+
+Mentor at Global Ambassador Program     (Jun 2019 – Oct 2019)
+  • Welcomed and guided new international and transfer students with the transition to the UCSD life
+  • Offered directions to relevant campus resources and provided a sense of community to off-campus tritons
+            </pre>
+          </ul>
+        </div>
+
+        <div id="projects">
+          <h2>Projects</h2>
+          <ul>
+            <li>Web Development</li>
+            <pre>
+Front-end Web Developer for WavBase     (Sept 2020 – Dec 2020)
+  • Source code: https://github.com/abiliu0627/wavBase
+  • Built version control website for musicians to virtually collaborate and track artists’ progression
+  • Implemented website interface referencing Figma design using React and query data from Firebase
+  • Managed team workflow accordingly to Use Cases document, Screen Sequence Diagram, Database Schema
+             
+  
+Web Developer at San Diego Nanotechnology Infrastructure      (Jan 2021 – Present)
+    <details>
+    <summary>Live Website</summary>
+    <!-- <iframe width="500" height="400" src="http://sdni-center.ucsd.edu/" title="SDNI">
+    </iframe> -->
+  </details>
+  • Update SDNI website pages and create new pages/content, and publish the website with weekly updates
+  • Optimize the display of the information on the website, increase mobile compatibility using Bootstrap
+  • Transfer website contents saved in static constants to sustainable database, develop management system
+
+
+Personal Project - My Episodes      (Aug 2020 – Present)
+  • Source code: https://github.com/abiliu0627/myEpisodes.git
+  • Apply HTML/CSS, JavaScript to manage frontend display of main, add, edit and video information pages
+  • Use Spring Boot for framework and perform full-stack integration using Thymeleaf, JpaRepository as API
+  • Write Query functions to retrieve and manipulate data stored in MYSQL, render data to frontend
+            </pre>
+
+            <li>Android Application</li>
+            <pre>
+Android Developer at Women in Computing     (Oct 2020 – Jan 2021)
+  • Source code: https://github.com/haelaine/Recipe-App
+  • Built beginner friendly recipe sharing Android app (Easy Bites) using Kotlin and Firebase with 5 teammates
+  • Implemented login, register, home, profile and explore screens according to teammate’s Figma design
+  • Performed CRUD operations interacting between Cloud Firestore, Storage and front-end XML layouts</pre
+            >
+            <li>Automation tool</li>
+            <pre>
+Software Developer at IEEE UC San Diego Branch      (Sept 2021 – Dec 2021)
+  • Source code: https://github.com/abiliu0627/Auto-Jober
+  • Automated job application on LinkedIn Easy Apply which speeded up manual process over 50%
+  • Implemented script with Selenium to automate webpage interaction based on information send from GUI
+  • Designed GUI using Python library Tkinter that synchronously prompted and collected user input
+
+          </pre
+            >
+
+            <li>Japanese Video Project</li>
+            <video width="320" height="240" controls>
+              <source
+                src="assets/JAP_Digital_Storytelling.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </ul>
+        </div>
+
+        <div id="feedbacks">
+          <fieldset>
+            <legend>Feedback</legend>
+            <form>
+              <label>Who are you?</label>
+              <br />
+              <input list="roles" name="role" id="role" />
+              <datalist id="roles">
+                <option value="Student"></option>
+                <option value="Teaching staff"></option>
+                <option value="Recruiter"></option>
+              </datalist>
+            </form>
+
+            <form>
+              <label>How do you like my website?</label>
+              <select>
+                <optgroup label=":)">
+                  <option value="perfect">Perfect</option>
+                  <option value="good">Good</option>
+                </optgroup>
+                <optgroup label=":(">
+                  <option value="meh">Meh</option>
+                  <option value="bad">Bad</option>
+                </optgroup>
+              </select>
+            </form>
+
+            <h3>Leave a message here:</h3>
+            <textarea id="msg" name="w3review"></textarea>
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </div>
+
+        <div id="contact">
+          <h2>Contact</h2>
+          <footer>
+            <div class="footerItm">
+              <a
+                href="https://github.com/abiliu0627"
+                class="socialMedia fa fa-github"
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/yulin-abigail-liu/"
+                class="socialMedia fa fa-linkedin"
+              ></a>
+              <a
+                href="https://www.facebook.com/yulin.liu.1612/"
+                class="socialMedia fa fa-facebook"
+              ></a>
+            </div>
+
+            <div class="footerItm">
+              <b>Email</b><br /><br />
+              <a href="mailto=yul008@ucsd.edu">yul008@ucsd.edu</a>
+            </div>
+
+            <div class="footerItm">
+              <b>Phone</b>
+              <p>(+1) 702-209-1800</p>
+            </div>
+
+            <div class="footerItm">
+              <b>Location</b>
+              <p>San Diego, CA</p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </main>
+
+    <!--shift,alt,f-->
+  </body>
+</html>

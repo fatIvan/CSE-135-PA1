@@ -1,0 +1,331 @@
+:root {
+    --purple: #3F2463;
+    --purple2: #75569e;
+    --purple3: #9c83c0;
+    --purple4: #bba8d4;
+    --purple5: #d8caec;
+    --teal: #78D1CC;
+    --salmon: #F4716D;
+    --orange: #F79B68;
+    --navTextHeight: calc(1px + 2vw);
+}
+
+@font-face {
+    font-family: 'StickyNotesRegular';
+    src: url('fonts/StickyNotesRegular.eot');
+    /* IE9 Compat Modes */
+    src: url('fonts/StickyNotesRegular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('fonts/StickyNotesRegular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('fonts/StickyNotesRegular.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('fonts/StickyNotesRegular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('fonts/StickyNotesRegular.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Simplicity';
+    src: url('fonts/Simplicity.eot');
+    /* IE9 Compat Modes */
+    src: url('fonts/Simplicity.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('fonts/Simplicity.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('fonts/Simplicity.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('fonts/Simplicity.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('fonts/Simplicity.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--purple);
+    margin: 0;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+nav {
+    background-color: #78D1CC;
+    display: flex;
+    padding: 1.5vw;
+}
+
+.navBox1 {
+    flex: 2;
+}
+
+#menuIcon {
+    color: white;
+}
+
+.navBox2 {
+    flex: 1;
+    position: relative;
+    margin: auto;
+    height: var(--navTextHeight);
+}
+
+.navLink {
+    margin-left: 3vw;
+    text-decoration: none;
+    font-family: 'Simplicity', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-weight: 900;
+    font-size: var(--navTextHeight);
+}
+
+.navLink:hover {
+    color: grey;
+}
+
+#searchForm {
+    padding-left: var(--navTextHeight);
+    font-size: calc(var(--navTextHeight) - 1vw);
+}
+
+#searchInput {
+    border-width: 0.1vw;
+    border-radius: 3px;
+    width: 18vw;
+    height: var(--navTextHeight);
+}
+
+#searchIcon {
+    position: absolute;
+    left: calc(var(--navTextHeight) + 0.5vw);
+    top: 0.2vw;
+    font-size: var(--navTextHeight);
+    color: grey;
+}
+
+#searchBtn {
+    border-radius: 5px;
+    height: 4vh;
+    width: 3vw;
+    min-width: 25px;
+    border: none;
+    font-size: calc(5px + 1vw);
+}
+
+#searchBtn:hover {
+    background-color: var(--orange);
+}
+
+#introSec {
+    display: flex;
+    flex-direction: column;
+    height: 45vw;
+    /* background-color: antiquewhite; */
+}
+
+/* small screen */
+@media screen and (max-width: 800px) {
+    .navLink {
+        visibility: hidden;
+    }
+
+    /* .navLink2, #vertNav{
+        visibility: visible !important;
+    } */
+
+    #introSec {
+        height: 90vw;
+    }
+
+    #introBox1, #introBox2{
+        margin: auto;
+    }
+
+    #downArrow {
+        margin: 10vw 23vw 10vw 23vw;
+    }
+
+}
+
+/* big screen */
+@media screen and (min-width: 800px) {  
+    #introSec {
+        flex-direction: row;
+    }
+
+    #menuIcon {
+        display: none;
+    }
+}
+
+#introPic {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 100%;
+    transition: width 2s, height 2s;
+    
+}
+
+#introPic:hover {
+    width: 23vw;
+    height: 23vw;
+    -ms-transform: rotate(-20deg);
+    /* IE 9 */
+    transform: rotate(-20deg);
+}
+
+#introBox1 {
+    flex: 1;
+    padding: 3vw;
+}
+
+#introBox2 {
+    flex: 2;
+    color: var(--salmon);
+    padding: 5vw;
+    /* background-color: #78D1CC; */
+}
+
+#helloWorld {
+    font-style: italic;
+    color: white;
+    font-size: 2vw;
+}
+
+#scrollTxt {
+    font-size: 2vw;
+    color:var(--orange);
+}
+
+.introHeader {
+    font-size: 4vw;
+}
+
+#downArrow {
+    color: white;
+    font-size: 10vw;
+    /* position: absolute; */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {
+        left: 50vw;
+        top: 80vh;
+    }
+
+    50% {
+        font-size: 13vw;
+        left: 48.5vw;
+        top: 80vh;
+    }
+
+    100% {
+        left: 50vw;
+        top: 80vh;
+    }
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+}
+
+#landing {
+    flex: 1;
+}
+
+#about, #experiences, #projects, #feedbacks, #contact {
+    padding: 5vw;
+}
+
+#about {
+    background-color: var(--purple2);
+}
+
+#experiences {
+    flex: 1;
+    background-color: var(--purple3);
+}
+
+#projects {
+    background-color: var(--purple4);
+}
+
+#feedbacks {
+    background-color: var(--purple5);
+}
+
+#contact {
+    background-color: var(--teal);
+}
+
+h2 {
+    color: var(--purple);
+    font-size: 3vw;
+}
+
+.aboutTxt {
+    font-size: 2vw;
+    color: var(--purple5);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li {
+    font-size: 2vw;
+    color: white;
+}
+
+pre {
+    color: var(--purple);
+    font-size: 1.5vw;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+#vertNav {
+    background-color: #45a09b;
+    padding: 2vw;
+    width: fit-content;
+    visibility: hidden;
+    position: absolute;
+}
+
+.navLink2 {
+    font-family: 'Simplicity', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 3vw;
+    line-height: 5vw;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+
+}
+
+.navLink2:hover {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.fa {
+    margin: 10px;
+    font-size: 50px !important;
+    text-decoration: none;
+    color: grey;
+}
+
+footer {
+    display: flex;
+}
+
+.footerItm {
+    margin: 1vw;
+}

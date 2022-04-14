@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zhiyuan Zhang's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Xanh+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Zhiyuan Zhang</h1>
+      <div id="aud">
+        <audio src="./Media/mus.wav" controls></audio>
+      </div>
+      <span>
+        <svg width="300" height="300">
+          <polygon points="100,10 40,198 190,78 10,78 160,198" />
+        </svg>
+      </span>
+      <figure>
+        <picture>
+          <source srcset="./images/person.png" media="(max-width: 640px)" />
+          <source
+            srcset="./images/person.png"
+            media="(min-width:641px) and (max-width: 1024px)"
+          />
+          <img width="300" height="400" src="./images/person.png" alt="Ivan" />
+        </picture>
+        <figcaption>Ivan on Whale Watching</figcaption>
+      </figure>
+    </header>
+    <br />
+    <main>
+      <div id="bur">
+        <input type="checkbox" id="check" />
+        <span class="hid"></span>
+        <span class="hid"></span>
+        <span class="hid"></span>
+
+        <nav>
+          <ol>
+            <li>
+              <a class="ol" href="#s1">Who is Ivan</a>
+            </li>
+            <li>
+              <a class="ol" href="#s2">Education Overview</a>
+            </li>
+            <li>
+              <a class="ol" href="#s3">Experience</a>
+            </li>
+            <li>
+              <a class="ol" href="#s4">Contact Info</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <section id="s1">
+        <h2>Biography</h2>
+        <div id="intro">
+          <p>
+            Hello! My name is Zhiyuan Zhang a.k.a <b>Ivan</b>. I am a fourth
+            year Computer Science and Mathematics <strong>double</strong> major
+            student at UCSD. In my free time, I love to play the piano and
+            workout at the gym. I also love watching anime and listening to
+            anime music as well and below is one of my favoriate songs of all
+            time.
+          </p>
+          <video src="./images/vid.mp4" controls width="400"></video>
+        </div>
+      </section>
+      <br />
+      <section id="s2">
+        <h2>Objectives</h2>
+        <p id="obj">
+          Fourth year UC San Diego computer science and mathematics double major
+          seeking 2022 summer internship and 2023 full time opportunities.
+          Experienced working with multiple programming project groups and
+          currently working on a React website and a React Native mobile
+          application. Adaptive learner who is looking forward to learning new
+          technical skills.
+        </p>
+        <br />
+        <h2>Education</h2>
+        <div id="edu">
+          <div>
+            <p>University of California, San Diego</p>
+            <p>Expected Graduation: June 2023</p>
+            <p>Bachelor of Science in Mathematics</p>
+            <p>Bachelor of Science in Computer Science</p>
+            <p><b>Provost honor:</b> Fall Qtr 2020, Winter Qtr 2019</p>
+          </div>
+          <table>
+            <caption>
+              <b> Grades At UCSD </b>
+            </caption>
+            <colgroup>
+              <col span="1" />
+              <col span="1" />
+            </colgroup>
+            <tr>
+              <th>Majors</th>
+              <th>GPA</th>
+            </tr>
+            <tr>
+              <td>Mathematics</td>
+              <td>3.222</td>
+            </tr>
+            <tr>
+              <td>Computer Science</td>
+              <td>3.425</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <br />
+      <section>
+        <h2>Technical Skills</h2>
+        <p>
+          Programming Languages: Java, JavaScript, C/C++, ARM Assembly, Python,
+          R
+        </p>
+        <p>
+          Technologies: Git, HTML/CSS, React.js, React Native, SQL, MongoDB,
+          IndexedDB, Node.js, Linux
+        </p>
+      </section>
+      <br />
+      <section>
+        <h2 id="s3">Projects</h2>
+        <h3><em>School Projects</em></h3>
+        <pre>
+Project Manager / Full-stack developer for Stock Prediction Game at ACM        La Jolla, CA    Sep 2021 –  Current
+•	Source code: https://github.com/Stock-Prediction-Game
+•	Build a stock prediction game for stock lovers to have market prediction and leaderboard competition
+•	Implement a reusable NavBar component as well as the Dashboard page using React and React Hooks
+•	Fetch stock info from TD Ameritrade API using <code>axios</code> to display on Dashboard and for users’ searching
+
+Project Manager / Front-end Developer at Chinese Computer Community          La Jolla, CA      Sep 2020 – Apr 2021
+•	Source code: https://github.com/fatIvan/My-Weather-Website
+•	Built a single-page weather report website utilizing React especially React Components and React Hooks
+•	Implemented Home, Result, Error, About screens and reusable custom components such as NavBar
+•	Utilized fetch function to get data from openweathermap.org and redirect to Result/Error screen
+•	Styled the website and made it adaptable to multiple different screen sizes using CSS
+
+Project Lead / Full-stack developer / Designer for RIVER                     La Jolla, CA      Apr 2021 – Jun 2021 
+•	Website URL:  https://cse110-w21-group7.github.io/cse110-SP21-group7/index.html
+•	Built a fancy bullet journal website that utilized HTML/CSS/ JavaScript/IndexedDB 
+•	Utilized HTML/CSS for the layouts of all pages and created custom components such as Buttons and Nav Bars
+•	Utilized JavaScript to create daily logs and distinguished the logs with querySelector for render effects
+•	Implemented scripts for the Monthly Log Page to retrieve the correct daily log information from IndexedDB
+        </pre>
+        <h3><em>Personal Projects</em></h3>
+        <pre>
+Android Application Designer at Women In Computing                          La Jolla, CA	  Jun 2020 – Oct 2020
+•	Developed an Android app named “Time Quilt” intended for people in quarantine to motivate themselves
+•	Implemented the load-app screen and the design of the app while collaborating with 4 other groupmates
+
+Full-stack developer for Cutiepet 		                                 La Jolla, CA       Sep 2021 –  Current
+•	Source code: https://github.com/CutiePet
+•	Build a social media platform for sharing and viewing pets nearby along with a team of 12 members
+•	Implement the login page and the editing profile page using React Native for frontend
+•	Implement the backend using Mongoose to store users’ credentials and data along with the backend team
+        </pre>
+      </section>
+      <br />
+      <section>
+        <h2>Leadership Experience</h2>
+        <pre>
+Human Resources Officer of Chinese Computer Community at UCSD            La Jolla, CA         Sept 2020 – Apr 2021
+•	Responsible for four project groups with 20 employee relations
+•	Hosted events and workshops for Triple C members such as General Body Meeting, Demo Day, and socials
+•	Recruited candidates, maintained Triple C members’ records, and updated Triple C policies
+•	Directly communicated with the leadership board and sorted out issues within the community
+        </pre>
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <div>
+        <div id="foot">
+          <h2 id="s4">Contact Information</h2>
+          <ul>
+            <li>
+              <span>Email: </span>
+              <a class="ul" href="mailto:zhz018@ucsd.edu">zhz018@ucsd.edu</a>
+            </li>
+            <li>
+              <span>Phone: (858) 900-4739</span>
+            </li>
+            <li>
+              <span>Github:</span>
+              <a class="ul" href="https://www.github.com/fativan">
+                www.github.com/fativan
+              </a>
+            </li>
+            <li>
+              <span>Linkedin:</span>
+              <a
+                class="ul"
+                href="https://www.linkedin.com/in/zhiyuan-zhang-ivan/"
+              >
+                www.linkedin.com/in/zhiyuan-zhang-ivan/
+              </a>
+            </li>
+          </ul>
+        </div>
+        <details>
+          <summary>Hidden Survey</summary>
+          <form>
+            <fieldset>
+              <legend>Survey</legend>
+              <div id="extra">
+                <canvas id="can"
+                  >Your browser does not support the canvas tag.</canvas
+                >
+                <iframe
+                  src="https://space.bilibili.com/35830558?spm_id_from=333.788.0.0"
+                  width="1000"
+                  height="500"
+                  title="Ivan's music piece"
+                ></iframe>
+                <aside>
+                  This is www.bilibili.com and you are looking at Ivan's
+                  masterpieces
+                </aside>
+              </div>
+              <label for="exp"
+                >How is your experience with Ivan's Portfolio?</label
+              >
+              <input list="exps" name="exp" id="exp" />
+              <datalist id="exps">
+                <option value="Good"></option>
+                <option value="Outstanding"></option>
+                <option value="Need to improve"></option>
+              </datalist>
+              <br />
+              <br />
+              <label for="impress">What are you most impressed by Ivan:</label>
+              <select name="impress" id="impress">
+                <optgroup label="Actually impressed">
+                  <option value="piano">piano</option>
+                  <option value="techincal skills">technial skills</option>
+                </optgroup>
+                <optgroup label="You are funny!">
+                  <option value="humor">humor</option>
+                </optgroup>
+              </select>
+              <br />
+              <br />
+              <label for="message">What do you want to say to Ivan?</label>
+              <br />
+              <br />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <br />
+              <input type="submit" value="Submit" />
+              <template><p>Thank you!</p></template>
+            </fieldset>
+          </form>
+        </details>
+      </div>
+    </footer>
+    <script>
+      var canvas = document.getElementById("can");
+      var context = canvas.getContext("2d");
+      context.fillStyle = "#111111";
+      context.fillRect(0, 0, 20, 20);
+    </script>
+  </body>
+</html>
